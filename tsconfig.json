@@ -1,7 +1,7 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
-    "baseUrl": "./",
+    "baseUrl": "./src",
     "outDir": "./dist/out-tsc",
     "sourceMap": true,
     "declaration": false,
@@ -15,6 +15,38 @@
     "lib": [
       "es2017",
       "dom"
+    ]
+  },
+  "paths": {
+    "@abi/*": [
+      "assets/contracts/*"
+    ],
+    "@service/*": [
+      "app/@service/*"
+    ],
+    "@pipe/*": [
+      "app/@pipe/*"
+    ],
+    "@factory/*": [
+      "app/@factory/*"
+    ],
+    "@contract/*": [
+      "app/@contract/*"
+    ],
+    "@error/*": [
+      "app/@error/*"
+    ],
+    "@shared/*": [
+      "app/@shared/*"
+    ],
+    "@guard/*": [
+      "app/@guard/*"
+    ],
+    "@model/*": [
+      "app/@model/*"
+    ],
+    "@env/*": [
+      "environments/*"
     ]
   }
 }
