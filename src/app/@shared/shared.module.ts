@@ -5,7 +5,11 @@ import { AppRoutingModule } from '../app-routing.module';
 
 @NgModule({
   imports: [
-    CommonModule
+    CommonModule,
+    AppRoutingModule
+  ],
+  exports: [
+    HeaderComponent,
   ],
   declarations: [HeaderComponent]
 })

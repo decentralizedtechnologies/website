@@ -19,11 +19,3 @@
     }
   }
 }
-
-@include media-breakpoint-down(sm) {
-  #home {
-    #intro {
-      @include header-padding($header-height-mobile);
-    }
-  }
-}

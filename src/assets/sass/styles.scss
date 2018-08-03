@@ -29,6 +29,10 @@
 @import "sass/ebm-global";
 @import "ebm/modules/ebm-header";
 
+.site-wrapper {
+  overflow: hidden;
+}
+
 /* RESPONSIVE FONT RESIZE */
 
 $headings-ratio-1-3: .675;
@@ -48,6 +52,10 @@ $headings-ratio-4-6: .875;
   }
 }
 
+@mixin header-padding($padding: $header-height-control) {
+  padding-top: px-to-rem($padding);
+}
+
 .header {
   background-color: transparent;
   border-bottom: none;
@@ -58,6 +66,7 @@ $headings-ratio-4-6: .875;
 }
 
 @import "components/home.component";
+@import "components/dapps.component";
 
 
 @include media-breakpoint-down(sm) {
@@ -75,4 +84,15 @@ $headings-ratio-4-6: .875;
   }
 }
 
-@include media-breakpoint-up(sm) {}
+@include media-breakpoint-down(sm) {
+  #home {
+    #intro {
+      @include header-padding($header-height-mobile);
+    }
+  }
+  #dapps {
+    #intro {
+      @include header-padding($header-height-mobile);
+    }
+  }
+}

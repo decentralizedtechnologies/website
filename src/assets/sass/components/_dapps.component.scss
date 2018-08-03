@@ -1,0 +1,53 @@
+#dapps {
+  background-color: theme-color('dark');
+  min-height: 100vh;
+  #intro {
+    @include flex-column-center;
+    @include header-padding;
+    min-height: 100vh;
+  }
+  .project {
+    margin-bottom: get-spacer(4);
+    padding: get-spacer(4);
+    text-decoration: none;
+    position: relative;
+    display: block;
+    height: 280px;
+    .trigger {
+      padding-top: get-spacer(4);
+      position: absolute;
+      right: 0;
+      top: 0;
+      i {
+        font-size: $h1-font-size;
+      }
+      transition: transform 0.3s ease-in-out;
+      transform: translateX(-28px);
+    }
+    &:hover {
+      .trigger {
+        transform: translateX(-14px);
+      }
+    }
+    &:after {
+      transform: rotate(-45deg);
+      background-color: $black;
+      position: absolute;
+      display: block;
+      bottom: -12px;
+      right: -26px;
+      height: 35px;
+      width: 70px;
+      content: '';
+    }
+  }
+  .hackaton {
+    color: $black;
+    h3 {
+      font-size: $h1-font-size;
+    }
+    h4 {
+      @include bold;
+    }
+  }
+}

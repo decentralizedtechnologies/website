@@ -75,10 +75,10 @@ $theme-colors: () !default;
 $theme-colors: map-merge((
   "primary":    $primary,
   "secondary":  $secondary,
-  "success":    $success,
+  "blue":    $blue,
   "yellow":     $yellow,
-  "warning":    $warning,
-  "danger":     $danger,
+  "pink":    $pink,
+  "purple":     $purple,
   "light":      $light,
   "dark":       $dark
 ), $theme-colors);
