@@ -13,12 +13,17 @@
         border-width: 5px;
         max-width: 70px;
       }
-      strong {
-
-      }
     }
     h3 {
       color: $pink;
+    }
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  #home {
+    #intro {
+      @include header-padding($header-height-mobile);
     }
   }
 }

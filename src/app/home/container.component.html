@@ -1,15 +1,5 @@
 <div id="home">
-  <header class="header">
-    <div class="container">
-      <div class="row">
-        <div class="header-left col-sm-3">
-          <a href="#" class="logo">
-            <img src="assets/img/logo-decentalized-technologies-light.svg" alt="D/T">
-          </a>
-        </div>
-      </div>
-    </div>
-  </header>
+  <app-header></app-header>
 
   <section class="section" id="intro">
     <div class="container">
@@ -23,6 +13,11 @@
         <u>decentralized</u> applications to
         <strong>enable blockchain mass-adoption</strong>
       </h3>
+      <nav class="mt-4">
+        <a [routerLink]="['/dapps']" class="btn btn-lg btn-outline-yellow">Browse the dApps
+          <i class="icon-chevron-right"></i>
+        </a>
+      </nav>
     </div>
   </section>
 </div>

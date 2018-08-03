@@ -76,7 +76,7 @@ $theme-colors: map-merge((
   "primary":    $primary,
   "secondary":  $secondary,
   "success":    $success,
-  "info":       $info,
+  "yellow":     $yellow,
   "warning":    $warning,
   "danger":     $danger,
   "light":      $light,
@@ -209,7 +209,7 @@ $border-width:                1px !default;
 $border-color:                $gray-300 !default;
 
 $border-radius:               .25rem !default;
-$border-radius-lg:            .3rem !default;
+$border-radius-lg:            .1rem !default;
 $border-radius-sm:            .2rem !default;
 
 $box-shadow-sm:               0 .125rem .25rem rgba($black, .075) !default;

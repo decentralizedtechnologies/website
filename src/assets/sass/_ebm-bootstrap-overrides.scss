@@ -8,3 +8,19 @@
 .img-responsive {
   width: 100%;
 }
+
+a.btn,
+button.btn,
+input[type="submit"].btn,
+.btn {
+  @include light;
+  border-radius: $border-radius-lg;
+  text-transform: uppercase;
+  font-size: $font-size-base;
+  letter-spacing: 0.8px;
+  i {
+    margin-left: get-spacer(2);
+    font-size: $font-size-sm;
+    font-weight: bold;
+  }
+}
