@@ -23,7 +23,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/assets/sass/main/component/styles.scss"
+              "src/assets/sass/styles.scss"
             ],
             "stylePreprocessorOptions": {
               "includePaths": [
