@@ -1,0 +1,24 @@
+#home {
+  background-color: theme-color('dark');
+  min-height: 100vh;
+  #intro {
+    @include flex-column-center;
+    @include header-padding;
+    min-height: 100vh;
+    color: white;
+    .disclaimer {
+      hr {
+        margin: get-spacer(3) 0;
+        border-color: white;
+        border-width: 5px;
+        max-width: 70px;
+      }
+      strong {
+
+      }
+    }
+    h3 {
+      color: $pink;
+    }
+  }
+}

@@ -28,3 +28,52 @@
 @import "sass/ebm-overrides";
 @import "sass/ebm-global";
 @import "ebm/modules/ebm-header";
+
+/* RESPONSIVE FONT RESIZE */
+
+$headings-ratio-1-3: .675;
+$headings-ratio-4-6: .875;
+@include media-breakpoint-down(sm) {
+  h1 {
+    font-size: $h1-font-size * $headings-ratio-1-3;
+  }
+  h2 {
+    font-size: $h2-font-size * $headings-ratio-1-3;
+  }
+  h3 {
+    font-size: $h3-font-size * $headings-ratio-1-3;
+  }
+  h4 {
+    font-size: $h4-font-size * $headings-ratio-4-6;
+  }
+}
+
+.header {
+  background-color: transparent;
+  border-bottom: none;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  top: 0;
+}
+
+@import "components/home.component";
+
+
+@include media-breakpoint-down(sm) {
+  .header {
+    .header-left,
+    .header-center,
+    .header-right {
+      height: 77px;
+    }
+    .logo {
+      img {
+        width: 140px;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-up(sm) {}
