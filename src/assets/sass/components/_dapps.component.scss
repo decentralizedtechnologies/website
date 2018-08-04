@@ -13,6 +13,9 @@
     position: relative;
     display: block;
     height: 280px;
+    img {
+      width: 63%;
+    }
     .trigger {
       padding-top: get-spacer(4);
       position: absolute;
@@ -48,6 +51,33 @@
     }
     h4 {
       @include bold;
+    }
+  }
+  .bar {
+    color: $purple;
+  }
+  .simple-ico {
+    color: white;
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  #dapps {
+    #intro {
+      .project {
+        height: 220px;
+        img {
+          width: 77%;
+        }
+        .trigger {
+          transform: translateX(-7px);
+        }
+      }
+      .hackaton {
+        h3 {
+          font-size: $h2-font-size;
+        }
+      }
     }
   }
 }
