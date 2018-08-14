@@ -7,15 +7,12 @@
     min-height: 100vh;
     color: white;
     .disclaimer {
-      hr {
-        margin: get-spacer(3) 0;
-        border-color: white;
-        border-width: 5px;
-        max-width: 70px;
-      }
     }
-    h3 {
-      color: $pink;
+    hr {
+      margin: get-spacer(4) 0;
+      border-color: white;
+      border-width: 5px;
+      max-width: 70px;
     }
   }
 }
