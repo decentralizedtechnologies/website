@@ -1,0 +1,25 @@
+@import "sass/dt";
+
+.header {
+  background-color: transparent;
+  border-bottom: none;
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+}
+
+@include media-breakpoint-down(sm) {
+  .header {
+    .header-left,
+    .header-center,
+    .header-right {
+      height: $header-height-mobile;
+    }
+    .logo {
+      img {
+        width: 140px;
+      }
+    }
+  }
+}

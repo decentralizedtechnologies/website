@@ -1,8 +1,7 @@
 @charset "UTF-8";
 
-@import "bootstrap/scss/functions";
-@import "bootstrap/scss/mixins";
-@import "sass/bootstrap-variables";
+@import "sass/dt";
+
 @import "bootstrap/scss/reboot";
 @import "bootstrap/scss/print";
 @import "bootstrap/scss/type";
@@ -16,10 +15,6 @@
 @import "bootstrap/scss/utilities";
 
 // EBM variables
-@import "sass/ebm-variables";
-@import "ebm/functions/ebm-functions";
-@import "ebm/helpers/ebm-helpers";
-@import "sass/ebm-fonts-setup";
 @import "sass/ebm-fonts";
 @import "sass/ebm-bootstrap-overrides";
 @import "ebm/control/ebm-text-responsive-control";
@@ -49,38 +44,6 @@ $headings-ratio-4-6: .875;
   }
   h4 {
     font-size: $h4-font-size * $headings-ratio-4-6;
-  }
-}
-
-@mixin header-padding($padding: $header-height-control) {
-  padding-top: px-to-rem($padding);
-}
-
-.header {
-  background-color: transparent;
-  border-bottom: none;
-  position: absolute;
-  right: 0;
-  left: 0;
-  top: 0;
-}
-
-@import "components/home.component";
-@import "components/dapps.component";
-
-
-@include media-breakpoint-down(sm) {
-  .header {
-    .header-left,
-    .header-center,
-    .header-right {
-      height: $header-height-mobile;
-    }
-    .logo {
-      img {
-        width: 140px;
-      }
-    }
   }
 }
 

@@ -1,3 +1,5 @@
+@import "sass/dt";
+
 #home {
   background-color: theme-color('dark');
   min-height: 100vh;
@@ -6,13 +8,5 @@
     @include header-padding;
     min-height: 100vh;
     color: white;
-    .disclaimer {
-    }
-    hr {
-      margin: get-spacer(4) 0;
-      border-color: white;
-      border-width: 5px;
-      max-width: 70px;
-    }
   }
 }

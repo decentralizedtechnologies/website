@@ -1,0 +1,11 @@
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/mixins";
+@import "sass/bootstrap-variables";
+@import "sass/ebm-variables";
+@import "ebm/functions/ebm-functions";
+@import "ebm/helpers/ebm-helpers";
+@import "sass/ebm-fonts-setup";
+
+@mixin header-padding($padding: $header-height-control) {
+  padding-top: px-to-rem($padding);
+}

@@ -1,6 +1,18 @@
+@import "sass/dt";
+
 #dapps {
   background-color: theme-color('dark');
   min-height: 100vh;
+  .disclaimer {
+    color: white;
+    margin-bottom: get-spacer(5);
+    hr {
+      margin: get-spacer(4) 0;
+      border-color: white;
+      border-width: 5px;
+      max-width: 70px;
+    }
+  }
   #intro {
     @include flex-column-center;
     @include header-padding;
@@ -56,8 +68,11 @@
   .bar {
     color: $purple;
   }
-  .simple-ico {
+  .bir {
     color: white;
+  }
+  .simple-ico {
+    color: $blue;
   }
 }
 
